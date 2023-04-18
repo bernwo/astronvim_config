@@ -9,4 +9,25 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  {
+    "tanvirtin/monokai.nvim",
+    config = function()
+      require("monokai").setup {
+        -- palette = require('monokai').pro
+        -- palette = require('monokai').soda
+        palette = require('monokai').ristretoo
+      }
+    end
+  },
+  {
+    "folke/todo-comments.nvim",
+    dependencies = {"nvim-lua/plenary.nvim"},
+    opts = {},
+    event = "User AstroFile",
+    cmd = { "TodoQuickFix" },
+    keys = {
+      {"<leader>T", "<cmd>TodoTelescope<cr>", desc="Open TODOs in Telescope"},
+    },
+    -- end
+  }
 }
