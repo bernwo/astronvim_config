@@ -1,21 +1,20 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
   -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
+  --   "tanvirtin/monokai.nvim",
   --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
+  --     require("monokai").setup {
+  --       -- palette = require('monokai').pro
+  --       -- palette = require('monokai').soda
+  --       palette = require('monokai').ristretoo
+  --     }
+  --   end
   -- },
   {
-    "tanvirtin/monokai.nvim",
+    "loctvl842/monokai-pro.nvim",
     config = function()
-      require("monokai").setup {
-        -- palette = require('monokai').pro
-        -- palette = require('monokai').soda
-        palette = require('monokai').ristretoo
+      require("monokai-pro").setup{
+        devicons = true,
+        filter = "machine",
       }
     end
   },
