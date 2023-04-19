@@ -2,7 +2,7 @@ return {
   {
     "loctvl842/monokai-pro.nvim",
     config = function()
-      require("monokai-pro").setup{
+      require("monokai-pro").setup {
         transparent_background = true,
         devicons = true,
         filter = "machine",
@@ -11,22 +11,12 @@ return {
   },
   {
     "folke/todo-comments.nvim",
-    dependencies = {"nvim-lua/plenary.nvim"},
+    dependencies = { "nvim-lua/plenary.nvim" },
     opts = {},
     event = "User AstroFile",
     cmd = { "TodoQuickFix" },
     keys = {
-      {"<leader>T", "<cmd>TodoTelescope<cr>", desc="Open TODOs in Telescope"},
+      { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
-    -- end
-  },
-  {
-    "jghauser/fold-cycle.nvim",
-    config = function()
-    require("fold-cycle").setup{}
-    end
-  },
-  {
-     
   },
 }
