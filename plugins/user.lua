@@ -17,9 +17,6 @@ return {
             context_start_underline = false,
           },
         },
-        ---@param c Colorscheme
-        overrride = function(c)
-        end,
       }
     end
   },
