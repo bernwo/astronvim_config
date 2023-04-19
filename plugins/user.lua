@@ -19,5 +19,14 @@ return {
       {"<leader>T", "<cmd>TodoTelescope<cr>", desc="Open TODOs in Telescope"},
     },
     -- end
-  }
+  },
+  {
+    "jghauser/fold-cycle.nvim",
+    config = function()
+    require("fold-cycle").setup{}
+    end
+  },
+  {
+     
+  },
 }
