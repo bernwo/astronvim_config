@@ -1,18 +1,9 @@
 return {
-  -- {
-  --   "tanvirtin/monokai.nvim",
-  --   config = function()
-  --     require("monokai").setup {
-  --       -- palette = require('monokai').pro
-  --       -- palette = require('monokai').soda
-  --       palette = require('monokai').ristretoo
-  --     }
-  --   end
-  -- },
   {
     "loctvl842/monokai-pro.nvim",
     config = function()
       require("monokai-pro").setup{
+        transparent_background = true,
         devicons = true,
         filter = "machine",
       }
