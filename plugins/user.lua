@@ -3,9 +3,23 @@ return {
     "loctvl842/monokai-pro.nvim",
     config = function()
       require("monokai-pro").setup {
+        terminal_colors = true,
         transparent_background = true,
         devicons = true,
         filter = "machine",
+        plugins = {
+          bufferline = {
+            underline_selected = false,
+            underline_visible = false,
+          },
+          indent_blankline = {
+            context_highlight = "default", -- default | pro
+            context_start_underline = false,
+          },
+        },
+        ---@param c Colorscheme
+        overrride = function(c)
+        end,
       }
     end
   },
