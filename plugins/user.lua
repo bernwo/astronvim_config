@@ -36,5 +36,18 @@ return {
       require("notify").setup {
         background_colour = "#000000" }
     end
+  },
+  {
+    "L3MON4D3/LuaSnip",
+    config = function()
+      require("luasnip.loaders.from_lua").lazy_load({
+        paths = { "~/.config/nvim/lua/user/LuaSnip/", "~/AppData/Local/nvim/lua/user/LuaSnip/" } })
+      require("luasnip.config").set_config({
+        -- Enable autotriggered snippets
+        enable_autosnippets = true,
+        -- Use Tab to trigger visual selection
+        store_selection_keys = "<Tab>",
+      })
+    end
   }
 }
