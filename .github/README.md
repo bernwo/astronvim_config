@@ -13,8 +13,16 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 
 #### Clone AstroNvim
 
+If you're using Linux, run
+
 ```shell
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+```
+
+If you're using Windows, run
+
+```pwsh
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim "$env:USERPROFILE\AppData\Local\nvim"
 ```
 
 #### Create a new user repository from this template
@@ -25,8 +33,22 @@ You can also just clone this repository directly if you do not want to track you
 
 #### Clone the repository
 
+If you're using Linux, run
+
 ```shell
-git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim/lua/user
+git clone https://github.com/bernwo/astronvim_config.git ~/.config/nvim/lua/user
+```
+
+If you're using Windows, run
+
+```pwsh
+git clone https://github.com/bernwo/astronvim_config.git "$env:USERPROFILE\AppData\Local\nvim\lua\user"
+```
+
+If you're using termux, run
+
+```shell
+git clone --single-branch --branch termux https://github.com/bernwo/astronvim_config.git ~/.config/nvim/lua/user
 ```
 
 #### Start Neovim
