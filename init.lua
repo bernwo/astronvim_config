@@ -56,7 +56,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "rust-analyzer"
     },
   },
   -- Configure require("lazy").setup() options

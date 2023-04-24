@@ -6,22 +6,22 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = { "astro",
-        "clangd", -- C and C++
+        -- "clangd", -- C and C++
         "cmake", -- CMake
         "cssls", -- CSS
         "eslint", -- ESLint        
         "html", -- HTML
         "jsonls", -- JSON
         "tsserver", -- JavaScript and TypeScript
-        "julials", -- Julia
+        -- "julials", -- Julia
         "ltex", -- LaTeX
         "remark_ls", -- Markdown
-        "powershell_es", -- Powershell
+        -- "powershell_es", -- Powershell
         "pylsp", -- Python
         "tailwindcss", -- Taiwind CSS
         "yamlls", -- YAML
-        "rust_analyzer", -- Rust
-        "lua_ls",
+        -- "rust_analyzer", -- Rust
+        -- "lua_ls",
       },
     },
   },

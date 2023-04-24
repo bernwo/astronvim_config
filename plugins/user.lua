@@ -4,7 +4,7 @@ return {
     config = function()
       require("monokai-pro").setup {
         terminal_colors = true,
-        transparent_background = true,
+        transparent_background = false,
         devicons = true,
         filter = "machine",
         plugins = {
